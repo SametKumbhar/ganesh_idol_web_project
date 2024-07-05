@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <script defer type="text/javascript" src="js/common.js"></script>
+    <script defer type="text/javascript" src="js/index.js"></script>
+    <style>
+
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body style="background-color: black;" onload="loaddatetime()">
+  <div class="datetime"><span id="date" style="text-align: left;"></span><span id="nameplate">Samet Kumbhar</span><span id="time" style="text-align: right;"></span></div>
+    <ol class="tnav">
+        <h2>Samet Arts</h2>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html" style="background-color: white;color: red;border-radius: 5px;padding: 5px;">Products</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="login.html">Log-In</a></li>
+    </ol><br>
+    <div class="wpinstfix">
+        <a href="https://wa.me/+918080728294"><img src="images/wp (2).jpg" alt=""></a>
+        <a href="https://www.instagram.com/samet_arts_2801?igsh=aWJkYTN4aTV6Z2V5"><img src="images/in (2).jpg" alt=""></a>
+        <a href="tel:+918080728294"><img src="images/calling.jpg" alt="images not found"></a>
+        <a href="sms://+918080728294?body=hello"><img src="images/sms.jpg" alt="images not found"></a>
+</div><br>
+<details open class="prmenu">
+    <summary role="menubar">Menu</summary>
+    <a href="product.html" style="background-color: lime;">All Products</a>
+    <a href="idol.html">Idol Booking</a>
+    <a href="plaster.html">Plaster Order</a>
+    <a href="decoration.html">Decoration Work</a>
+</details>
+
+
+<h2 class="heading">Plaster And Clay Idols</h2>
+<div class="idolpl">
+  <div>1<img src="images/gallarypics/1.jpg" alt="images not found" ></div>
+  <div>2<img src="images/gallarypics/2.jpg" alt="images not found" ></div>
+  <div>3<img src="images/gallarypics/8.jpg" alt="images not found" ></div>
+  <div>4<img src="images/gallarypics/10.jpg" alt="images not found" ></div>
+  <div>5<img src="images/gallarypics/12.jpg" alt="images not found" ></div>
+  <div>6<img src="images/gallarypics/19.jpg" alt="images not found" ></div>
+  <div>7<img src="images/gallarypics/20.jpg" alt="images not found" ></div>
+  <div>8<img src="images/gallarypics/27.jpeg" alt="images not found" ></div>
+  <div>9<img src="images/gallarypics/29.jpg" alt="images not found" ></div>
+  <div>10<img src="images/gallarypics/30.jpeg" alt="images not found" ></div>
+  <div>11<img src="images/gallarypics/41.jpg" alt="images not found" ></div>
+  <div>12<img src="images/gallarypics/40.jpg" alt="images not found" ></div>
+</div><br>
+
+
+
+
+
+<h2 class="formheading">Order From Available Ganesha Idols</h2>
+<div class="orderavailableform">
+  <form action="product.html" name="idolavailablebook" onsubmit="return checkavailablefields()">
+    <table align="center">
+    <tr>
+      <th class="star">Name:</th>
+      <td><input type="text" name="name" id="avlname" placeholder="Enter Name" required onkeyup="availablenamevalidation(this.value)"><br><span id="availablenamespan" ></span></td>
+    </tr>
+    <tr>
+      <th class="star">Contact:</th>
+      <td><input type="tel" name="t" id="avlcontact" placeholder="+91 " required  onkeyup="availablecontactvalidation(this.value)"><br><span id="availablecontactspan" ></span></td>
+    </tr>
+    <tr>
+      <th>Model No.:</th>
+      <td><select required id="avlmodel">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        <option value="">9</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th class="star">Height:</th>
+      <td><input type="number" name="n" id="avlheight" max="12" required placeholder="Height In Foot"></td>
+    </tr>
+    <tr>
+      <th class="star">Quantity:</th>
+      <td><input type="number" required name="n" max="200" id="avlquintity"></td>
+    </tr>
+   <tr>
+      <td colspan="2"><button type="reset" class="danger">Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn" >Submit Order</button></td>
+   </tr>
+    </table>
+  </form>
+</div><br>
+
+
+
+
+
+
+<h2 class="formheading">Request Custom Ganesha Idols</h2>
+<div class="ordercustomform" style="animation-name: customformbg;animation-duration: 60s;animation-iteration-count: infinite;">
+  <form name="idolcustombook" action="plaster.html" onsubmit="return checkcustomfields()">
+    <table align="center">
+    <tr>
+      <th class="bstar">Name:</th>
+      <td><input type="text" name="name" id="cstname" placeholder="Enter Name" required onkeyup="customnamevalidation(this.value)"><br><span id="customnamespan"></span></td>
+    </tr>
+    <tr>
+      <th class="bstar">Contact:</th>
+      <td><input type="tel" name="t" id="cstcontact" placeholder="+91 " required  onkeyup="customcontactvalidation(this.value)"><br><span id="customcontactspan"></span></td>
+    </tr>
+    <tr>
+      <th class="bstar">Height:</th>
+      <td><input type="number" name="n" id="cstheight" max="12" required placeholder="Height In Foot"></td>
+    </tr>
+    <tr>
+      <th>Quantity:</th>
+      <td><input type="number" required name="n" max="200" id="" class="bstar"></td>
+    </tr>
+    <tr>
+      <th class="bstar">Description:</th>
+      <td><textarea name="t" id="cstdescribe" cols="25" rows="6" placeholder="Describe your design,pattern and shape...?"></textarea></td>
+    </tr>
+    <tr>
+      <th>Photos:</th>
+      <td><input type="file" name="f" id=""></td>
+    </tr>
+   <tr>
+    <td colspan="2"><button type="reset" class="danger">Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn" >Request</button></td
+   </tr>
+    </table>
+  </form>
+</div>
+
+
+<h2 class="heading">Coming Soon....!!!</h2>
+<div class="idolpl">
+  <div style="overflow: visible;"><img src="images/comingsoon/1.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/2.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/3.jpg"></div>
+  <div><img src="images/comingsoon/4.jpg"></div>
+  <div><img src="images/comingsoon/5.jpg"></div>
+  <div><img src="images/comingsoon/6.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/7.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/8.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/9.jpg"></div>
+  <div><img src="images/comingsoon/10.jpg"></div>
+  <div><img src="images/comingsoon/11.jpg"></div>
+  <div><img src="images/comingsoon/12.jpg"></div>
+  <div><img src="images/comingsoon/13.jpg"></div>
+  <div><img src="images/comingsoon/14.jpg"></div>
+  <div><img src="images/comingsoon/15.jpg"></div>
+  <div><img src="images/comingsoon/16.jpg"></div>
+  <div><img src="images/comingsoon/17.jpg"></div>
+  <div><img src="images/comingsoon/18.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/19.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/20.jpg"></div>
+  <div style="overflow: visible;"><img src="images/comingsoon/22.jpg"></div>
+  <div><img src="images/comingsoon/23.jpg"></div>
+  <div><img src="images/comingsoon/24.jpg"></div>
+  <div><img src="images/comingsoon/25.jpg"></div>
+</div>
+
+
+
+<hr><hr>
+
+
+
+
+
+
+<h2 class="heading" >Plaster Or Gypsum Supplier</h2>
+<h2 class="formheading" style="margin-top: -5px;">Today plaster price per bag is</h2><h1 class="heading id="todayprice" style="margin-top: -10px;">110.45</h1>
+
+
+<div class="idolpl" style="background-image:radial-gradient(aqua,black,black,magenta);">
+   <div><img src="images/plaster1.jpg" alt="images not found"></div>
+   <div><img src="images/plaster2.jpg" alt="images not found"></div>
+   <div><img src="images/plasterfilldish.jpg" alt="images not found"></div>
+   <div><img src="images/plastershadow.jpg" alt="images not found"></div>
+   <div><img src="images/plastergodown.webp" alt="images not found"></div>
+   <div><img src="images/plaster2.jpg" alt="images not found"></div>
+</div><br><hr><hr>
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="heading">Decoration Design PVC Works</h2>
+<div class="decoration">
+  <div><img src="images/decoration/21.jpg" alt="images not found"></div>
+  <div><img src="images/decoration/2.jpg" alt="images not found"></div>
+  <div><img src="images/decoration/3.webp" alt="images not found"></div>
+  <div><img src="images/prabhaval1.webp" alt="images not found"></div>
+  <div><img src="images/decoration/5" alt="images not found"></div>
+  <div><img src="images/decoration/6" alt="images not found"></div>
+  <div><img src="images/decoration/7" alt="images not found"></div>
+  <div><img src="images/decoration/8.jpeg" alt="images not found"></div>
+  <div><img src="images/decoration/9.jpeg" alt="images not found"></div>
+  <div><img src="images/decoration/10.jpeg" alt="images not found"></div>
+  <div><img src="images/decoration/11.jpg" alt="images not found"></div>
+  <div><img src="images/decoration/12.jpeg" alt="images not found"></div>
+  <div><img src="images/decoration/13.jpeg" alt="images not found"></div>
+  <div><img src="images/decoration/14.avif" alt="images not found"></div>
+  <div><img src="images/decoration/15.jpg" alt="images not found"></div>
+  <div><img src="images/decoration/16.webp" alt="images not found"></div>
+  <div><img src="images/decoration/17.jpeg" alt="images not found"></div>
+  <div><img src="images/decoration/18.jpg" alt="images not found"></div>
+  <div><img src="images/decoration/19.jpeg" alt="images not found"></div>
+  <div><img src="images/decoration/20.jpg" alt=""></div>
+  <div><img src="images/decoration/3.webp" alt=""></div>
+</div><br>
+
+
+
+
+
+
+    <div class="bottum">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product.html" style="background-color: lime;color: black;border-radius: 45px;">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ol>
+
+
+        <div><h3>Adress:</h3><h4>A/P-Takaliwadi,Tal-Shirol,Dist-Kolhapur. 416 108</h4></div>
+        <div><h3>Cell:</h3><h4>+91 8080728294</h4></div>
+        <div><h3>Email:</h3><h4>samkumbhar2000@gmail.com</h4></div>
+        <div class="wpinst">
+                <a href="https://wa.me/+918080728294"><img src="images/wp (2).jpg" alt=""></a>
+                <a href="https://www.instagram.com/samet_arts_2801?igsh=aWJkYTN4aTV6Z2V5"><img src="images/in (2).jpg" alt=""></a>
+                <a href="https://maps.app.goo.gl/foazc3g3t1VxqWW1A"><img src="images/mpp.webp" alt="images not found"></a>
+        </div>
+    </div>
+</body>
+</html>
